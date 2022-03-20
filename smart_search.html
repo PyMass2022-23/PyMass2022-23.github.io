@@ -1,0 +1,291 @@
+<html>
+  <head>
+	<title>Smart Search</title>
+
+<style>
+
+a{
+text-decoration: none;
+}
+
+.split {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background: URL(lightblue.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+	
+}
+
+.right {
+  right: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.sidebar {
+  position: fixed;
+  width: 250px;
+  height: 100%;
+  background: #e3faff;
+}
+
+.dot{
+	position: absolute;
+	top: 5px;
+	left: 90px;
+	height: 60px;
+	width: 60px; 
+	border-radius: 50px;
+	display: inline-block;
+	background-color: black;
+}
+
+.dot img{
+	position: absolute;
+	top: -4px;
+	left: -17px;
+}
+
+.button1{
+    border-width: 0px;
+    background-color: #b0f1ff;
+    border-color: #b0f1ff;
+    width: 200px;
+    height: 60px;
+    font-family:;
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;  
+}
+
+.button2{
+    border-width: 0px;
+    background-color: #b0f1ff;
+    border-color: #b0f1ff;
+    width: 200px;
+    height: 60px;
+    font-family:;
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;  
+}
+.button3{
+    border-width: 0px;
+    background-color: #b0f1ff;
+    border-color: #b0f1ff;
+    width: 200px;
+    height: 60px;
+    font-family:;
+    position: absolute;
+    top: 280px;
+    left: 20px;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;  
+}
+.button4{
+    border-width: 0px;
+    background-color: black;
+    border-color: black;
+    width: 200px;
+    height: 60px;
+    font-family:;
+    position: absolute;
+    top: 360px;
+    left: 20px;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;  
+}
+.button5{
+    border-width: 0px;
+    background-color: #b0f1ff;
+    border-color: #b0f1ff;
+    width: 200px;
+    height: 60px;
+    font-family:;
+    position: absolute;
+    top: 440px;
+    left: 20px;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;  
+}
+.button6{
+    border-width: 0px;
+    background-color: #b0f1ff;
+    border-color: #b0f1ff;
+    width: 200px;
+    height: 60px;
+    font-family:;
+    position: absolute;
+    top: 560px;
+    left: 20px;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;  
+}
+
+.client{
+	position: absolute;
+	top: 100px;
+	left: 20px;
+	font-size: bolder;
+}
+
+ul {
+	text-decoration: none;
+	list-style: none;
+}
+
+      li a {
+	   color : black;
+        padding: 8px 16px;
+        text-decoration: none;
+      }
+ 
+      .icon {
+        margin-right: 10px;
+      }
+
+button1:hover {
+	background-color: black;
+	color: white;
+}
+
+.active{
+	color:white;
+}
+
+.button6:hover {
+	background-color: #78dbf1;
+	color: white;
+}
+
+.indicator{
+    border-width: 0px;
+    background-color: #b0f1ff;
+    border-color: #b0f1ff;
+    width: 200px;
+    height: 60px;
+    font-family:;
+    position: absolute;
+    left: 50%;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;
+	
+}
+
+      .toplogo {
+        position: absolute;
+        left: 280px;
+	  height: 50px;
+      }
+
+
+.logos{
+	background-color: white;
+	border-width: 0px;
+}
+
+.message{
+	position: absolute;
+	top: 300px;
+	left: 500px;
+	font-family: Helvetica;
+	font-weight: bolder;
+	color: #78dbf1;
+	font-size: 48px;
+}
+
+
+</style>
+  </head>
+
+<body>
+
+<div class="split left">
+<p class="client">Jack Turner</p>
+  <div class="sidebar">
+	<button class="dot"><img src="user_logo.png" height="60px"></button>
+	 <ul>
+        <li><button class="button1"><a href="dashboard.html">
+           <i class="fas fa-home icon"></i>
+          Dashboard</a></button></li>
+
+        <li><button class="button2"><a href="records.html">
+           <i class="fas fa-records icon"></i>
+          Records</a></button></li>
+
+        <li><button class="button3"><a href="integrations.html">
+          <i class="fas fa-integrations icon"></i>
+          Integrations</a></button></li>
+
+        <li><button class="button4"><a href="#" class="active">
+          <i class="fas fa-smartsearch icon"></i>
+        Smart Search</a></button></li>
+
+		<li><button class="button5"><a href="storage.html">
+          <i class="fas fa-storage icon"></i>
+        Storage</a></button></li>
+
+		<li><button class="button6"><a href="pymass.html">
+          <i class="fas fa-signout icon"></i>
+        Sign Out</a></button></li>
+
+    </ul>
+   </div>
+</div>
+
+
+<div class="split right">
+	
+	
+</div>
+
+<button class="indicator">Smart Search</button>
+
+    <div class="toplogo">
+      <button class="logos"><a href="integrations.html"><img src="zoom-logo.png" alt="zoom" width="50px"/></a></button>
+      <button class="logos"><a href="integrations.html"><img src="zoho.jpeg" alt="zoho" width="100px" /></a></button>
+	 <button class="logos"><a href="integrations.html"><img src="google-meet.png" alt="zoho" width="40px" /></a></button>
+    </div>
+
+	<div class="message">Development in Progress...
+	</div>
+
+
+  </body>
+</html>
